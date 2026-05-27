@@ -1,0 +1,21 @@
+store_id,name,region,country,opened_date
+1,New York Store,East,US,2018-10-31
+2,Los Angeles Store,South,US,2020-04-03
+3,Chicago Store,North,US,2021-08-16
+4,Houston Store,West,US,2017-01-29
+5,London Store,North,GB,2010-04-07
+6,Toronto Store,South,CA,2018-07-06
+7,Sydney Store,Central,AU,2012-04-05
+8,Dallas Store,East,US,2018-02-10
+9,Miami Store,Central,US,2015-10-29
+10,Seattle Store,South,US,2022-04-21
+11,Boston Store,East,US,2015-04-27
+12,Atlanta Store,East,US,2020-07-28
+13,Denver Store,Central,US,2017-09-11
+14,Phoenix Store,East,US,2014-02-15
+15,Manchester Store,West,GB,2019-07-05
+16,Birmingham Store,South,GB,2019-05-27
+17,Vancouver Store,East,CA,2018-03-10
+18,Melbourne Store,West,AU,2016-04-09
+19,Brisbane Store,West,AU,2014-01-13
+20,Montreal Store,Central,CA,2012-12-10

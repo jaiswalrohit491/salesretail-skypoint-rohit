@@ -1,0 +1,101 @@
+product_id,name,category,sub_category,unit_cost,unit_price
+1,Laptop,Electronics,Mobile,159.45,282.25
+2,Smartphone,Electronics,Wearables,300.07,632.66
+3,Tablet,Electronics,Mobile,362.53,746.41
+4,Headphones,Electronics,Mobile,90.65,185.2
+5,Smart Watch,Electronics,Photography,269.38,481.9
+6,Camera,Electronics,Computing,186.12,329.84
+7,Monitor,Electronics,Audio,102.52,147.38
+8,Keyboard,Electronics,Audio,144.78,273.31
+9,Mouse,Electronics,Wearables,248.95,524.07
+10,USB Hub,Electronics,Mobile,133.35,250.22
+11,T-Shirt,Clothing,Footwear,227.52,363.18
+12,Jeans,Clothing,Footwear,69.95,108.25
+13,Jacket,Clothing,Outerwear,112.84,179.59
+14,Sneakers,Clothing,Outerwear,351.52,593.97
+15,Dress,Clothing,Tops,196.33,265.71
+16,Hoodie,Clothing,Accessories,337.19,696.56
+17,Shorts,Clothing,Tops,80.98,157.66
+18,Boots,Clothing,Accessories,357.17,734.74
+19,Socks,Clothing,Tops,232.82,461.16
+20,Cap,Clothing,Footwear,221.98,392.08
+21,Coffee Maker,Home & Garden,Decor,262.6,365.33
+22,Blender,Home & Garden,Decor,294.09,448.91
+23,Vacuum Cleaner,Home & Garden,Living Room,-38.95,62.15
+24,Lamp,Home & Garden,Living Room,339.65,684.81
+25,Cushion,Home & Garden,Decor,303.61,420.0
+26,Curtains,Home & Garden,Garden,379.64,712.37
+27,Plant Pot,Home & Garden,Living Room,375.85,484.24
+28,Rug,Home & Garden,Living Room,27.96,44.76
+29,Mirror,Home & Garden,Garden,208.6,417.59
+30,Clock,Home & Garden,Kitchen,352.98,454.61
+31,Yoga Mat,Sports,Team Sports,282.38,492.84
+32,Dumbbells,Sports,Water Sports,232.72,416.95
+33,Running Shoes,Sports,Cycling,148.02,276.9
+34,Bicycle Helmet,Sports,Water Sports,102.88,223.67
+35,Water Bottle,Sports,Water Sports,143.1,296.84
+36,Resistance Bands,Sports,Water Sports,355.21,446.24
+37,Jump Rope,Sports,Outdoor,68.75,90.97
+38,Tennis Racket,Sports,Fitness,62.65,87.68
+39,Basketball,Sports,Fitness,265.46,436.39
+40,Swim Goggles,Sports,Outdoor,194.16,331.02
+41,Fiction Novel,Books,Non-Fiction,259.96,426.43
+42,Business Guide,Books,Fiction,230.67,323.65
+43,Cookbook,Books,Non-Fiction,356.65,495.57
+44,Self-Help Book,Books,Fiction,208.11,340.3
+45,History Book,Books,Fiction,351.77,682.99
+46,Science Textbook,Books,Children,88.99,162.51
+47,Art Book,Books,Reference,70.72,144.19
+48,Travel Guide,Books,Educational,328.72,467.7
+49,Children Story,Books,Reference,69.59,132.31
+50,Poetry Collection,Books,Fiction,237.47,348.68
+51,Mouse Pro,Electronics,Accessories,83.33,137.39
+52,Jacket Pro,Clothing,Footwear,243.39,512.71
+53,Children Story Pro,Books,Reference,18.5,36.35
+54,Tablet Pro,Electronics,Photography,194.45,342.68
+55,Monitor Pro,Electronics,Photography,359.1,592.39
+56,Monitor Pro,Electronics,Mobile,279.96,599.53
+57,Jump Rope Pro,Sports,Team Sports,316.45,572.65
+58,Cookbook Pro,Books,Educational,41.79,71.18
+59,Jeans Pro,Clothing,Outerwear,364.3,662.44
+60,Self-Help Book Pro,Books,Fiction,165.23,317.85
+61,Smartphone Pro,Electronics,Photography,232.46,292.16
+62,Hoodie Pro,Clothing,Footwear,276.04,440.05
+63,Cap Pro,Clothing,Outerwear,172.15,257.92
+64,Science Textbook Pro,Books,Reference,171.15,258.74
+65,Jump Rope Pro,Sports,Cycling,302.72,603.81
+66,Basketball Pro,Sports,Cycling,73.95,126.42
+67,Plant Pot Pro,Home & Garden,Living Room,232.33,479.12
+68,Keyboard Pro,Electronics,Accessories,299.88,645.28
+69,Monitor Pro,Electronics,Audio,88.14,177.23
+70,Fiction Novel Pro,Books,Non-Fiction,279.73,453.06
+71,Tablet Pro,Electronics,Wearables,322.33,686.42
+72,Water Bottle Pro,Sports,Outdoor,37.99,60.87
+73,Art Book Pro,Books,Children,17.99,32.98
+74,Poetry Collection Pro,Books,Fiction,116.73,250.79
+75,Boots Pro,Clothing,Tops,257.2,370.79
+76,Fiction Novel Pro,Books,Reference,116.54,202.2
+77,T-Shirt Pro,Clothing,Outerwear,247.23,365.23
+78,Smartphone Pro,Electronics,Audio,390.33,777.03
+79,Plant Pot Pro,Home & Garden,Decor,268.86,387.24
+80,Smartphone Pro,Electronics,Computing,295.56,523.77
+81,Science Textbook Pro,Books,Educational,366.26,793.0
+82,Lamp Pro,Home & Garden,Garden,92.84,198.05
+83,Cookbook Pro,Books,Children,4.85,8.39
+84,History Book Pro,Books,Educational,31.74,68.23
+85,Children Story Pro,Books,Reference,382.81,569.48
+86,Swim Goggles Pro,Sports,Water Sports,386.52,765.88
+87,Rug Pro,Home & Garden,Garden,384.61,808.33
+88,Smart Watch Pro,Electronics,Computing,194.34,313.58
+89,Sneakers Pro,Clothing,Outerwear,271.73,446.13
+90,Coffee Maker Pro,Home & Garden,Bedroom,208.05,309.13
+91,Camera Pro,Electronics,Computing,161.38,286.74
+92,Hoodie Pro,Clothing,Bottoms,192.19,403.52
+93,Lamp Pro,Home & Garden,Garden,75.57,147.38
+94,Dress Pro,Clothing,Bottoms,294.97,432.94
+95,Hoodie Pro,Clothing,Bottoms,335.02,666.69
+96,Keyboard Pro,Electronics,Photography,368.31,462.71
+97,Travel Guide Pro,Books,Educational,383.32,705.17
+98,Swim Goggles Pro,Sports,Team Sports,359.55,617.08
+99,Self-Help Book Pro,Books,Reference,114.27,156.76
+100,Travel Guide Pro,Books,Reference,320.31,410.3

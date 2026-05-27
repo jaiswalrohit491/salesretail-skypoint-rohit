@@ -1,0 +1,61 @@
+services:
+
+  # ── 1. PostgreSQL database (local, used when DB_HOST is not overridden) ───
+  db:
+    image: postgres:16-alpine
+    container_name: retail_db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB:       ${DB_NAME:-retail}
+      POSTGRES_USER:     ${DB_USER:-retail}
+      POSTGRES_PASSWORD: ${DB_PASS:-retail_pass}
+    ports:
+      - "${DB_PORT:-5432}:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER:-retail} -d ${DB_NAME:-retail}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  # ── 2. CSV loader ─────────────────────────────────────────────────────────
+  loader:
+    build:
+      context: ./loader
+    container_name: retail_loader
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DB_HOST:     ${DB_HOST:-db}
+      DB_PORT:     ${DB_PORT:-5432}
+      DB_NAME:     ${DB_NAME:-retail}
+      DB_USER:     ${DB_USER:-retail}
+      DB_PASS:     ${DB_PASS:-retail_pass}
+      DB_SSLMODE:  ${DB_SSLMODE:-disable}
+      LANDING_DIR: /landing
+    volumes:
+      - ./landing:/landing:ro
+    restart: "no"
+
+  # ── 3. DBT transformations ────────────────────────────────────────────────
+  dbt:
+    build:
+      context: ./dbt_project
+    container_name: retail_dbt
+    depends_on:
+      loader:
+        condition: service_completed_successfully
+    environment:
+      DB_HOST:    ${DB_HOST:-db}
+      DB_PORT:    ${DB_PORT:-5432}
+      DB_NAME:    ${DB_NAME:-retail}
+      DB_USER:    ${DB_USER:-retail}
+      DB_PASS:    ${DB_PASS:-retail_pass}
+      DB_SSLMODE: ${DB_SSLMODE:-disable}
+    restart: "no"
+
+volumes:
+  pgdata:
+    name: retail_pgdata

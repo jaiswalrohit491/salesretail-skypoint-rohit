@@ -73,7 +73,7 @@ landing/          raw CSVs (customers, products, stores, orders, order_items)
 ### Default — fully local (Windows / Linux / macOS)
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/jaiswalrohit491/salesretail-skypoint-rohit.git
 cd retail-pipeline
 
 docker compose up --build
@@ -139,8 +139,8 @@ Select tables from `marts_marts`: `dim_customer`, `dim_product`, `dim_store`, `d
 | Port | `5432` |
 | Database | `neondb` |
 | Schema | `marts_marts` |
-| Username | `neondb_owner` |
-| Password | `npg_w7SzmFA8tYys` |
+| Username | `username` |
+| Password | `password` |
 
 > The included `.pbix` file (`powerbi/Retail Sales Analytics Rohit Sah.pbix`)
 > is pre-configured for the Neon connection. On Windows, open it in Power BI Desktop

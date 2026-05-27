@@ -1,0 +1,60 @@
+version: 2
+
+models:
+  - name: stg_customers
+    description: "Cleaned and deduplicated customer records"
+    columns:
+      - name: customer_id
+        description: "Unique customer identifier"
+        tests:
+          - unique
+          - not_null
+      - name: email
+        description: "Validated email; NULL if format was invalid"
+      - name: country_code
+        description: "ISO-2 country code (uppercased)"
+
+  - name: stg_products
+    description: "Cleaned product catalogue; negative costs set to NULL"
+    columns:
+      - name: product_id
+        description: "Unique product identifier"
+        tests:
+          - unique
+          - not_null
+      - name: category
+        tests:
+          - accepted_values:
+              values: ['Electronics', 'Clothing', 'Home & Garden', 'Sports', 'Books']
+
+  - name: stg_stores
+    description: "Cleaned store master"
+    columns:
+      - name: store_id
+        description: "Unique store identifier"
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_orders
+    description: "Cleaned order headers; null-customer orders flagged as guest orders"
+    columns:
+      - name: order_id
+        description: "Unique order identifier"
+        tests:
+          - unique
+          - not_null
+      - name: status
+        tests:
+          - accepted_values:
+              values: ['completed', 'returned', 'cancelled', 'pending']
+
+  - name: stg_order_items
+    description: "Cleaned order line items; zero/negative quantities flagged"
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+      - name: product_id
+        tests:
+          - not_null
